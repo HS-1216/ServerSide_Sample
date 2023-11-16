@@ -6,7 +6,9 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT name, subject, score FROM SCORES";
+// 修正点
+$sql = "SELECT name, subject, score, comment FROM SCORES";
+
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -15,7 +17,10 @@ if ($result->num_rows > 0) {
 
     // forループを使用して行を処理
     for ($i = 0; $i < count($rows); $i++) {
-        echo "<tr><td>" . $rows[$i]['name'] . "</td><td>" . $rows[$i]['subject'] . "</td><td>" . $rows[$i]['score'] . "</td></tr>";
+
+        // 修正点
+        echo "<tr><td>" . $rows[$i]["name"] . "</td><td>" . $rows[$i]["subject"] . "</td><td>" . $rows[$i]["score"] . "</td><td>" . $rows[$i]["comment"] . "</td></tr>";
+
     }
     echo '</table>';
 } else {

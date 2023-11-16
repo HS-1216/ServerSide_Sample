@@ -5,9 +5,12 @@ table {
 }
 
 th {
-    width: calc(100%/3);
+    width: calc(100%/4);
     border: 2px solid #000000;
-    background-color: #00a2ff;
+
+    /* 修正点 */
+    background-color: #48b102;
+
     text-align: left;
     padding: 10px;
 }

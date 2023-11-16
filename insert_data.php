@@ -10,7 +10,9 @@ $name = $_POST['name'];
 $subject = $_POST['subject'];
 $score = $_POST['score'];
 
-$sql = "INSERT INTO SCORES (name, subject, score) VALUES ('$name', '$subject', '$score')";
+// 修正点
+$comment = $_POST['comment'];
+$sql = "INSERT INTO SCORES (name, subject, score, comment) VALUES ('$name', '$subject', '$score', '$comment')";
 
 if ($conn->query($sql) === TRUE) {
     echo "<h2>データが登録されました</h2>";

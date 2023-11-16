@@ -18,11 +18,16 @@
             <th>名前</th>
             <th>教科</th>
             <th>点数</th>
+
+            <!-- 修正点 -->
+            <th>コメント</th>
+
         </tr>
         <tr>
             <td>サンプル太郎</td>
             <td>英語</td>
             <td>100</td>
+            <td>サンプルコメントです</td>
         </tr>
 
         <!-- ここにデータが挿入されます -->
@@ -43,11 +48,19 @@
                 <th>名前</th>
                 <th>教科</th>
                 <th>点数</th>
+
+                <!-- 修正点 -->
+                <th>コメント</th>
+
             </tr>
             <tr>
                 <td><input type="text" id="name" name="name"></td>
                 <td><input type="text" id="subject" name="subject"></td>
                 <td><input type="number" id="score" name="score" max="100" min="0"></td>
+
+                <!-- 修正点 -->
+                <td><input type="text" id="comment" name="comment" placeholder="30文字以内"></td>
+
             </tr>
         </table>
         <button type="submit" name="registerBtn">登録</button>
