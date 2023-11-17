@@ -20,7 +20,6 @@ if ($result->num_rows > 0) {
 
         // 修正点
         echo "<tr><td>" . $rows[$i]["name"] . "</td><td>" . $rows[$i]["subject"] . "</td><td>" . $rows[$i]["score"] . "</td><td>" . $rows[$i]["comment"] . "</td></tr>";
-
     }
     echo '</table>';
 } else {
