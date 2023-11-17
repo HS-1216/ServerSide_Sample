@@ -5,8 +5,8 @@ function validateForm() {
 
     // 修正点
     var comment = document.getElementById("comment").value;
-
     if (name == "" || subject == "" || score == ""|| comment == "") {
+
         alert("すべての項目を入力してください");
         return false;
     }
