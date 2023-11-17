@@ -5,7 +5,10 @@ table {
 }
 
 th {
+
+　　/* 修正点 */
     width: calc(100%/4);
+
     border: 2px solid #000000;
 
     /* 修正点 */
