@@ -7,6 +7,6 @@ CREATE TABLE SCORES (
 
 INSERT INTO scores (name, subject, score) VALUES ('山田花子', '数学', 50);
 
--- 修正内容
+-- 修正点
 ALTER TABLE SCORES ADD comment VARCHAR(255);
 UPDATE SCORES SET comment = '項目を追加しました';
